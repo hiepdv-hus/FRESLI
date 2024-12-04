@@ -282,13 +282,17 @@ header {
     padding-left: 5%;
 }
 
-.yl-r-b-item img{
+.yl-r-b-item > img{
     position: absolute;
     top: -50px;
     left: -30px;
     width: 111px;
 }
-
+#nguyenlieuend1, #nguyenlieuend2, #nguyenlieured1, #nguyenlieured2 {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
 .yl-r-b-item .label {
     color: #2E4C18;
     font-size: 20px;
@@ -394,7 +398,7 @@ header {
     border-bottom-right-radius: 40px;
 }
 
-.rl-r-b-item img {
+.rl-r-b-item > img {
     position: absolute;
     top: -50px;
     left: -30px;
@@ -554,13 +558,23 @@ header {
     align-items: center;
     gap: 40px;
     margin-top: -40px;
+    position: relative;
 }
-.sale-right-item .content {
+
+.sale-right-item .daucong {
+    position: absolute;
+    top: -15px;
+    left: -25px;
+    width: 24px;
+    cursor: pointer;
+}
+.sale-right-item .content-text {
     font-size: 14px;
     color: #fff;
     padding: 15px 30px;
     background-color: #2E4C18;
     border-radius: 14px;
+    margin-left: 25px;
 }
 
 .sale-1 {
@@ -671,13 +685,21 @@ footer {
 #green-banner, #yl-banner {
     width: 454px;
 }
-
+#yl-number, #hong-number, #xanh-number {
+    width: auto;
+    height: 143px;
+}
 #pink-banner {
     width: 414px;
 }
 
 .banner-img-mobile {
     display: none;
+}
+
+.img-box {
+    height: 320px;
+    width: 100%;
 }
 
 @media screen and (max-width: 991px) {
