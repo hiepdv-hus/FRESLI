@@ -51,13 +51,16 @@
     </nav>
     <div class="container">
       <div class="banner">
-        <div class="position-relative banner-img">
+        <div class="position-relative banner-img banner-img-desktop">
           <img class="img-banner-1" src="images/cam 3.png">
           <img class="img-banner-2" src="images/cam 1 1.png">
           <img class="img-banner-3" src="images/đá 1.png">
           <img class="img-banner-4" src="images/cam-1.png">
           <img class="img-banner-5" src="images/xanh-1.png">
           <img class="img-banner-6" src="images/kiwi 1.png">
+        </div>
+        <div class="banner-img-mobile text-center">
+          <img width="80%" src="images/Group 99.png">
         </div>
         <div class="banner-content">
             <h1 class="heading">
@@ -85,26 +88,26 @@
           <div class="yellow-right">
             <div class="d-flex align-items-end">
               <h3 class="section-title">YELLOW</h3>
-              <img width="243" src="images/01.png">
+              <img id="yl-number" width="243" src="images/01.png">
             </div>
             <p class="text">Yellow là dòng nước ép chiết xuất từ các loại trái cây và rau củ như cà rốt, dứa, chanh, xoài... giúp cung cấp vitamin A, C và E, giúp tăng cường hệ miễn dịch và bảo vệ cơ thể khỏi bệnh tật</p>
             <div class="row">
-              <div class="col-md-4">
-                <div class="d-flex align-items-center yl-yl-bot">
+              <div class="col-md-4 col-4">
+                <div onclick="handleYellow('yl1')" class="d-flex align-items-center yl-yl-bot">
                   <img class="position-relative" src="images/vàng 1 2.png">
                   <div class="yl-title-text">YELLOW 1</div>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="d-flex align-items-center yl-yl-bot">
+              <div class="col-md-4 col-4">
+                <div onclick="handleYellow('yl2')" class="d-flex align-items-center yl-yl-bot">
                   <img class="position-relative" src="images/vàng 3.png">
-                  <div class="yl-title-text">YELLOW 1</div>
+                  <div class="yl-title-text">YELLOW 2</div>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="d-flex align-items-center yl-yl-bot">
+              <div class="col-md-4 col-4">
+                <div onclick="handleYellow('yl3')" class="d-flex align-items-center yl-yl-bot">
                   <img class="position-relative" src="images/cam 8.png">
-                  <div class="yl-title-text">YELLOW 1</div>
+                  <div class="yl-title-text">YELLOW 3</div>
                 </div>
               </div>
             </div>
@@ -117,7 +120,7 @@
         <div class="yellow-row">
           <div class="position-relative">
             <div  class="yl-left-img">
-              <img width="454" src="images/vàng 1 1.png">
+              <img id="yl-banner" width="454" src="images/vang-to-1.png">
             </div>
             <div class="yellow-left text">
               <p class="title shadow">YELLOW 1</p>
@@ -172,20 +175,20 @@
             </div>
             <p class="text text-end">Yellow là dòng nước ép chiết xuất từ các loại trái cây và rau củ như cà rốt, dứa, chanh, xoài... giúp cung cấp vitamin A, C và E, giúp tăng cường hệ miễn dịch và bảo vệ cơ thể khỏi bệnh tật</p>
             <div class="row">
-              <div class="col-md-4">
-                <div class="d-flex align-items-center justify-content-end rl-rl-bot">
-                  <div class="rl-title-text">RED 1</div>
+              <div class="col-md-4 col-4">
+                <div onclick="handlePink('pink3')" class="d-flex align-items-center justify-content-end rl-rl-bot">
+                  <div class="rl-title-text">RED 3</div>
                   <img class="position-relative" src="images/roots3.png">
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="d-flex align-items-center justify-content-end rl-rl-bot">
-                  <div class="rl-title-text">RED 1</div>
+              <div class="col-md-4 col-4">
+                <div onclick="handlePink('pink2')" class="d-flex align-items-center justify-content-end rl-rl-bot">
+                  <div class="rl-title-text">RED 2</div>
                   <img class="position-relative" src="images/hồng.png">
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="d-flex align-items-center justify-content-end rl-rl-bot">
+              <div class="col-md-4 col-4">
+                <div onclick="handlePink('pink1')" class="d-flex align-items-center justify-content-end rl-rl-bot">
                   <div class="rl-title-text">RED 1</div>
                   <img class="position-relative" src="images/hồng nhạt (1).png">
                 </div>
@@ -232,7 +235,7 @@
           </div>
           <div class="position-relative">
             <div  class="yl-left-img">
-              <img width="414" src="images/hồng nhạt.png">
+              <img id="pink-banner" src="images/hong-to-1.png">
             </div>
             <div class="red-left text">
               <p class="title shadow">YELLOW 1</p>
@@ -256,22 +259,22 @@
             </div>
             <p class="text">Yellow là dòng nước ép chiết xuất từ các loại trái cây và rau củ như cà rốt, dứa, chanh, xoài... giúp cung cấp vitamin A, C và E, giúp tăng cường hệ miễn dịch và bảo vệ cơ thể khỏi bệnh tật</p>
             <div class="row">
-              <div class="col-md-4">
-                <div class="d-flex align-items-center yl-yl-bot">
+              <div class="col-md-4 col-4">
+                <div onclick="handleGreen('green1')" class="d-flex align-items-center yl-yl-bot">
                   <img class="position-relative" src="images/xanh 1.png">
                   <div class="gr-title-text">GREEN 1</div>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="d-flex align-items-center yl-yl-bot">
+              <div class="col-md-4 col-4">
+                <div onclick="handleGreen('green2')" class="d-flex align-items-center yl-yl-bot">
                   <img class="position-relative" src="images/xanh 1.png">
-                  <div class="gr-title-text">GREEN 1</div>
+                  <div class="gr-title-text">GREEN 2</div>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="d-flex align-items-center yl-yl-bot">
+              <div class="col-md-4 col-4">
+                <div onclick="handleGreen('green3')" class="d-flex align-items-center yl-yl-bot">
                   <img class="position-relative" src="images/xanh 1.png">
-                  <div class="gr-title-text">GREEN 1</div>
+                  <div class="gr-title-text">GREEN 3</div>
                 </div>
               </div>
             </div>
@@ -284,7 +287,7 @@
         <div class="yellow-row">
           <div class="position-relative">
             <div  class="yl-left-img">
-              <img width="454" src="images/xanh 1.png">
+              <img id="green-banner" src="images/xanh 1.png">
             </div>
             <div class="yellow-left text">
               <p class="title shadow" style="background-color: #358C1D;">GREEN 1</p>
@@ -359,7 +362,7 @@
     </section>
     <section style="background-color: #FFF8E3;">
       <div class="container pt-5 pb-5">
-        <div class="row">
+        <div class="row sale-product">
           <div class="col-md-7 d-flex justify-content-between">
             <h2 class="sale-title">
               Các chương trình <br>
@@ -446,8 +449,8 @@
         </section>
         
         <div class="row box">
-          <div class="col-md-1"></div>
-          <div class="col-md-10">
+          <div class="col-lg-1"></div>
+          <div class="col-lg-10">
             <div class="row">
               <div class="col-md-4">
                 <div class="box-item shadow position-relative bg-light">
@@ -484,7 +487,7 @@
               At FRÈSLI, we care about the environment too. That’s why we focus on eco-friendly packaging and <br> partner with local farmers to support sustainable practices.
             </p>
           </div>
-          <div class="col-md-1"></div>
+          <div class="col-lg-1"></div>
         </div>
       </div>
     </section>
@@ -496,7 +499,7 @@
         100% Organic Detox Tea (Teatox) - Slimming, Tea Purify & Detox tea
       </div>
       <div class="row align-items-center mt-5 mb-5">
-        <div class="col-md-4">
+        <div class="col-md-4 img-center">
           <img width="60%" src="images/Intersect.png">
           <img width="60%" src="images/logo full.png">
         </div>
@@ -521,5 +524,7 @@
       </div>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
