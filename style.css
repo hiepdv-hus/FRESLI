@@ -288,7 +288,7 @@ header {
     left: -30px;
     width: 111px;
 }
-#nguyenlieuend1, #nguyenlieuend2, #nguyenlieured1, #nguyenlieured2 {
+#nguyenlieuend1, #nguyenlieuend2, #nguyenlieuend3, #nguyenlieured1, #nguyenlieured2, #nguyenlieured3, #nguyenlieugreen1, #nguyenlieugreen2, #nguyenlieugreen3 {
     width: 120px;
     height: 120px;
     object-fit: cover;
@@ -312,6 +312,12 @@ header {
     grid-template-columns: 335px 335px 335px;
     overflow: hidden;
     gap: 40px;
+    overflow-x: scroll;
+    scrollbar-width: none; /* Ẩn thanh cuộn trong Firefox */
+}
+
+.yl-r-b-row::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
 }
 
 .red-row {
@@ -381,6 +387,12 @@ header {
     grid-template-columns: 335px 335px 335px;
     overflow: hidden;
     gap: 40px;
+    overflow-x: scroll;
+    scrollbar-width: none; /* Ẩn thanh cuộn trong Firefox */
+}
+
+.yl-r-b-row::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
 }
 
 .red-right-bot {
@@ -849,4 +861,32 @@ footer {
     .banner {
         padding-top: 80px;
     }
+}
+
+.fix-shopee {
+    position: fixed;
+    left: 10px;
+    top: 40%;
+    width: 40px;
+    height: 40px;
+}
+.fix-fb {
+    position: fixed;
+    left: 10px;
+    top: 47%;
+    width: 40px;
+    height: 40px;
+}
+.fix-ig {
+    position: fixed;
+    left: 10px;
+    top: 54%;
+    width: 40px;
+    height: 40px;
+    background-color: #2E4C18;
+    padding: 5px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
