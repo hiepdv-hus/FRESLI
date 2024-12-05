@@ -5,6 +5,12 @@
     margin: 0;
     padding: 0;
 }
+body {
+    overflow-x: hidden;
+}
+.container {
+    max-width: 100%;
+}
 header {
     background-image: url(images/Rectangle\ 1.png);
     background-size: cover;
@@ -98,6 +104,10 @@ header {
     transition: .5s;
 }
 
+.banner-content {
+    padding-bottom: 30px;
+  
+}
 .banner-content .heading {
     font-size: 60px;
     color: #FFF8E3;
@@ -145,11 +155,18 @@ header {
     transform: scale(1.2);
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1080px) {
     .container {
-        width: 1440px;
+        width: 1080px;
     }
+    .banner {
+        transform: translateX(-100px);
+    }
+ 
+   
 }
+
+
 
 .buynow {
     font-size: 18px;
@@ -207,6 +224,7 @@ header {
     border-bottom-right-radius: 40px;
     width: 162px !important;
     margin-left: -80px;
+    white-space: nowrap;
 }
 
 .yl-yl-bot img {
@@ -734,6 +752,8 @@ footer {
 
     .banner-content {
         padding-bottom: 30px;
+        padding-left: 15%;
+        padding-right: 15%;
     }
 
     .yellow-row, .red-row {
@@ -756,6 +776,7 @@ footer {
         border-bottom-right-radius: 40px;
         width: 162px !important;
         margin-left: -40px;
+        white-space: nowrap;
     }
     .gr-title-text {
         margin-left: -40px;
