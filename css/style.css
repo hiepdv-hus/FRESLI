@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 *{
-    font-family: "Montserrat", sans-serif;
+    font-family: Montserrat;
     margin: 0;
     padding: 0;
 }
@@ -11,8 +11,8 @@ body {
 .container {
     max-width: 100%;
 }
-header {
-    background-image: url(images/Rectangle\ 1.png);
+#header {
+    background-image: url(../images/Rectangle\ 1.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -157,7 +157,7 @@ header {
 
 @media screen and (min-width: 1080px) {
     .container {
-        width: 1080px;
+        width: 1440px;
     }
     .banner {
         transform: translateX(-100px);
@@ -503,7 +503,7 @@ header {
 .bg-love {
     width: 100%;
     height: 600px;
-    background-image: url(images/bg-love.png);
+    background-image: url(../images/bg-love.png);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
