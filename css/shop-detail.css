@@ -242,7 +242,7 @@ border: 1px solid rgba(0, 0, 0, 0.10);
         display: none;
     }
     .banner-info {
-        height: 600px;
+        height: 666px;
     }
     .shop-detail-banner {
         height: auto;
@@ -270,14 +270,14 @@ border: 1px solid rgba(0, 0, 0, 0.10);
         right: 0;
         width: 100%;
         height: auto;
-        bottom: 0;
+        top: 255px;
         top: inherit;
     }
     .shop-detail-xanh-to {
         width: 70%;
         right: 0;
         height: auto;
-        bottom: 0;
+        top: 215px;
         top: inherit;
     }
     .banner-info {
