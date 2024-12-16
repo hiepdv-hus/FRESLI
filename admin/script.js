@@ -66,7 +66,7 @@ function renderTableData(petList) {
         <th scope="row">${pet.id}</th>
 				<td>${pet.name}</td>
 				<td>${pet.category}</td>
-				<td>${pet.thoiluong} phút</td>
+				<td>${pet.thoiluong}</td>
 				<td>${pet.giave}</td>
 				<td><img width="50" src="${pet.img}"/></td>
 				<td>${pet.dateAdded.getDate()}/${
