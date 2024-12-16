@@ -252,3 +252,44 @@ line-height: normal;
         gap: 22px;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .cart-order-sum {
+        width: 100%;
+    }
+    .nuoceple-row {
+        display: block;
+    }
+    .nuoceple-item-item .d-block {
+        display: flex !important;
+        align-items: center;
+    }
+    .sum {
+        margin-bottom: 0;
+        height: 29px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .shop-cart {
+        width: 100px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .shop-cart img{
+        width: 25px;
+        height: auto;
+    }
+    .continue {
+        flex: 1;
+        text-align: center;
+        margin-left: 10px;
+    }
+    .cart-continue {
+        line-height: 90px;
+    }
+    .shipping-img {
+        width: 100%;
+    }
+}

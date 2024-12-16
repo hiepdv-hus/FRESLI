@@ -60,7 +60,7 @@ padding: 0 15px;
 
 .shop-detail-banner {
     background: linear-gradient(84deg, rgba(225, 239, 151, 0.20) 3.36%, rgba(225, 239, 151, 0.00) 96.64%), linear-gradient(29deg, rgba(46, 76, 24, 0.00) 44.95%, #2E4C18 86.09%), #FFF8E3;
-    height: 800px;
+    height: 700px;
 }
 
 .banner-row {
@@ -70,15 +70,19 @@ padding: 0 15px;
 
 .banner-detail {
     box-shadow: 0px 4px 60px #FFF;
-    height: 800px; /* Chiều cao cố định */
+    height: 700px; /* Chiều cao cố định */
     background: #ffffffb4;
-    overflow: hidden; /* Ẩn nội dung vượt ra ngoài */
+    overflow: auto; /* Ẩn nội dung vượt ra ngoài */
     position: relative;
+}
+
+.banner-detail::-webkit-scrollbar {
+    display: none; /* Chrome, Safari và Edge */
 }
 
 .banner-detail img {
     width: 100%; /* Đảm bảo ảnh lấp đầy chiều ngang */
-    height: 100%; /* Lấp đầy chiều dọc thẻ cha */
+    height: auto; /* Lấp đầy chiều dọc thẻ cha */
     position: absolute;
     top: 0;
 }
@@ -157,7 +161,7 @@ line-height: normal;
 border: 1px solid #000;
 height: 45px;
 width: 232px;
-background-color: #fff;
+background-color: transparent;
 padding: 0 10px;
 margin: 0 8px;
 box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.10);
@@ -248,5 +252,57 @@ border: 1px solid rgba(0, 0, 0, 0.10);
     }
     .banner-row {
         display: block;
+    }
+    .nuoceple-row {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .nuoceple-row {
+        grid-template-columns: 1fr;
+    }
+    .uudai {
+        font-size: 20px;
+    }
+    .pineapple {
+        position: absolute;
+        right: 0;
+        width: 100%;
+        height: auto;
+        bottom: 0;
+        top: inherit;
+    }
+    .shop-detail-xanh-to {
+        width: 70%;
+        right: 0;
+        height: auto;
+        bottom: 0;
+        top: inherit;
+    }
+    .banner-info {
+        margin-top: 0 !important;
+        padding-top: 30px;
+    }
+    .all-comment {
+        margin-bottom: 15px;
+    }
+    .vietdanhgia {
+        margin-top: 15px;
+    }
+    .shop-jucies {
+        padding: 10px;
+        text-align: center;
+        height: 300px;
+    }
+    .shop-jucies .txt {
+        padding: 24px 10px;
+        margin-top: 15px;
+    }
+    .shop-water-combo-border {
+        margin-top: 0 !important;
+    }
+    .shop-detail-title {
+        font-size: 30px;
     }
 }
