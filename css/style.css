@@ -23,6 +23,7 @@ body {
     left: 0;
     right: 0;
     background-color: transparent !important;
+    z-index: 100;
 }
 .nav-link {
     color: #FFF8E3;

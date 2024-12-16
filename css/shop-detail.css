@@ -232,3 +232,21 @@ line-height: normal;
 border-radius: 62px;
 border: 1px solid rgba(0, 0, 0, 0.10);
 }
+
+@media screen and (max-width: 991px) {
+    .banner-detail {
+        display: none;
+    }
+    .banner-info {
+        height: 600px;
+    }
+    .shop-detail-banner {
+        height: auto;
+    }
+    .banner-shop-detail-txt {
+        margin: 50px 0;
+    }
+    .banner-row {
+        display: block;
+    }
+}
